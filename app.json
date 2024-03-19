@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "WXYZ-FM",
-    "description": "Discover new music from WXYZ.",
-    "slug": "wxyz-app",
+    "name": "WCBN-FM Ann Arbor",
+    "description": "Discover new music from the student-run radio station of the University of Michigan.",
+    "slug": "wcbn-app",
     "githubUrl": "https://github.com/dctalbot/spinitron-mobile-app",
     "privacy": "public",
-    "version": "1.0.0",
+    "version": "10.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "automatic",
@@ -15,20 +15,21 @@
       "backgroundColor": "#212733"
     },
     "updates": {
-      "fallbackToCacheTimeout": 0
+      "fallbackToCacheTimeout": 0,
+      "url": "https://u.expo.dev/f8dd9750-164f-11e9-8b84-313f96953860"
     },
     "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "org.wxyz",
+      "bundleIdentifier": "org.wcbn",
       "infoPlist": {
         "UIBackgroundModes": ["audio"]
       }
     },
     "android": {
-      "package": "org.wxyz",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=org.wxyz",
-      "versionCode": 0,
+      "package": "org.wcbn",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=org.wcbn",
+      "versionCode": 16,
       "splash": {
         "backgroundColor": "#212733",
         "resizeMode": "contain",
@@ -42,7 +43,9 @@
     },
     "platforms": ["android", "ios"],
     "extra": {
-      "eas": {}
+      "eas": {
+        "projectId": "f8dd9750-164f-11e9-8b84-313f96953860"
+      }
     },
     "runtimeVersion": {
       "policy": "appVersion"
