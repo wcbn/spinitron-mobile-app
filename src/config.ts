@@ -1,38 +1,44 @@
 export const config: AppConfig = {
-  name: "WXYZ-FM",
+  name: "WCBN-FM Ann Arbor",
   api: {
-    url: "https://spinitron-proxy.foo.us-east-2.cs.amazonlightsail.com/api",
+    url: "https://spinitron-proxy.d08jp15rftr3s.us-east-2.cs.amazonlightsail.com/api",
   },
   donate: {
-    text: "Give to WXYZ",
-    url: "https://example.com",
+    text: "Give to WCBN",
+    url: "https://leadersandbest.umich.edu/find/#!/give/basket/fund/361991",
   },
   phone: {
     text: "Studio request line",
-    numberFormatted: "(123) 456-7890",
-    numberRaw: "1234567890",
+    numberFormatted: "(734) 763-3500",
+    numberRaw: "17347633500",
   },
   chat: {
     text: "Message the DJ",
-    url: "https://hangouts.google.com/chat/person/123",
+    url: "https://hangouts.google.com/chat/person/118357885959401668528",
   },
   streams: [
     {
       text: "Low",
       bitrate: "64 kbps",
-      uri: "http://example.com/low.mp3",
+      uri: "http://floyd.wcbn.org:8000/wcbn-mid.mp3",
+      default: false,
+    },
+    {
+      text: "Medium",
+      bitrate: "128 kbps",
+      uri: "http://floyd.wcbn.org:8000/wcbn-hi.mp3",
       default: false,
     },
     {
       text: "High",
-      bitrate: "128 kbps",
-      uri: "http://example.com/high.mp3",
+      bitrate: "320 kbps",
+      uri: "http://floyd.wcbn.org:8000/wcbn-hd.mp3",
       default: true,
     },
   ],
   share: {
     text: "Share on social media",
-    message: "I'm listening to WXYZ!",
+    message: "I'm listening to WCBN-FM Ann Arbor!",
   },
   review: {
     text: "Write a review!",
