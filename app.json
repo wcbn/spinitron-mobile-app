@@ -1,11 +1,7 @@
 {
   "expo": {
-    "name": "WCBN-FM Ann Arbor",
-    "description": "Discover new music from the student-run radio station of the University of Michigan.",
-    "slug": "wcbn-app",
     "githubUrl": "https://github.com/dctalbot/spinitron-mobile-app",
     "privacy": "public",
-    "version": "10.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "automatic",
@@ -21,7 +17,6 @@
     "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "org.wcbn",
       "infoPlist": {
         "UIBackgroundModes": ["audio"]
       }
@@ -39,11 +34,6 @@
       "permissions": []
     },
     "platforms": ["android", "ios"],
-    "extra": {
-      "eas": {
-        "projectId": "f8dd9750-164f-11e9-8b84-313f96953860"
-      }
-    },
     "runtimeVersion": {
       "policy": "appVersion"
     }
